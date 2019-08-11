@@ -1,0 +1,116 @@
+@import "mixin";
+@import "reset";
+.Hair-index-footer-box{
+    height:342px;
+    display: flex;
+    justify-content: center;
+    //margin-bottom: 20px;
+    .Hair-index-footer{
+        width: 1190px;
+        height: 342px;
+        
+        .Hair-index-footer-top{
+            height: 104px;
+            display: flex;
+            justify-content: space-between;
+            padding: 35px 64px 25px 25px;
+            border-bottom:1px solid #999;
+            a{
+                display: flex;
+                .iconfont{
+                    font-size: 35px;
+                    color:#2979ff;
+                }
+                
+                 div{
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 5px;
+                    span:first-child{
+                        color: #543333;
+                        font-weight: 300;
+                    }
+                    span:last-child{
+                        color:#a6a6bf;
+                    }
+                }
+            }
+           
+        }
+
+
+    }
+    .Hair-index-footer-bootom{
+        height:238px;
+        width: 1190px;
+        display: flex;
+        justify-content: flex-start;
+        padding: 20px 0 40px 25px;
+        .Hair-index-footer-bootom-left{
+            display: flex;
+            justify-content: space-between;
+            width: 73%;
+            dl{
+                width: 20%;
+                dt{
+                    color:#333;
+                    margin-bottom: 18px;
+                }
+                dd{
+                    a{
+                        color:#999;
+                        &:hover{
+                            color:#2979ff;
+                        }
+                        
+                    }
+                }
+            }
+        }
+        .Hair-index-footer-bootom-right{
+            width:24%;
+            padding: 5px 64px 0 0;
+            border-left:1px solid #999;
+            margin-left: 15px;
+            
+            a{
+                
+                width:128px;
+                height:28px;
+                border:1px solid #999;
+                display: flex;
+                align-items: center;
+                color: #999;
+                margin :0 0 15px 20px;
+                &:hover{
+                    color: #2979ff;
+                }
+                .iconfont{
+                    width: 22px;
+                    height: 22px;
+                    margin: 0 6px 0 20px;
+                    color: #2979ff;
+                    line-height: 22px;
+                }
+            }
+            .Hair-two-dimension-code{
+                display: flex;
+                padding: 0 0 0 10px;
+                justify-content: flex-start;
+                height:128px;
+                div{
+                    display: flex;
+                    flex-direction: column;   
+                    align-items: center; 
+                    span{
+                        img{
+                            width: 110px;
+                            height: 110px;
+                            margin-left:5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,300 @@
+@import "reset";
+@import "mixin";
+ //查看大图的大图
+ .seeBigPic{
+    position: fixed;
+    z-index: 5;
+    display: none;
+    width: 100%;
+    height:100%;
+    background: rgba(153,153,153, .5);
+    top:0;
+    div{
+        position: absolute;
+        top:65px;
+        left:1330px;
+        font-size:50px;
+        color:#d71249;
+        cursor: pointer;
+    }
+    img{
+        margin: 80px auto;
+        opacity: 1;
+        background: #fff;
+    }
+}
+.Hair-details-box{
+    display: flex;
+    justify-content: center;
+    .Hair-details{
+        width: 1190px;
+        position: relative;
+        //放大镜大图
+        #big{
+            width: 375px; 
+            height: 375px; 
+            position: absolute; 
+            border: 1px solid black; 
+            left: 400px; 
+            top: 40px; 
+            overflow: hidden;
+            display: none;
+            z-index: 3;
+            img{
+                width: 950px; 
+                height: 950px;
+                position: absolute;
+            }
+        }
+       
+        .Hair-details-header{
+            height: 40px;
+            padding: 5px 4px;
+            a{
+                &:hover{
+                    color:#2979ff;
+                }
+            }
+            b{
+                color:#d71249;
+                font-weight:900;
+            }
+        }
+        .Hair-details-center{
+            height:529px;
+            display: flex;
+            justify-content: space-between;
+            .product-info-left{
+               width:382px;
+               height:529px;
+               position: relative;
+               .product-info-bigPic{
+                   width:382px;
+                   height:408px;
+                   border:1px solid #f3f3f3;
+                   .product-info-bigPic-top:first-of-type{
+                       display: block;
+                   }
+                   .product-info-bigPic-top{
+                       width: 380px;
+                       height:380px;
+                       margin: 0 auto;
+                       //position: absolute;
+                       display: none;
+                       img{
+                           width: 100%;
+                           height:100%;
+                           
+                       }
+                       #mark{
+                           width: 150px;
+                           height:150px;
+                           background-color: white; 
+                           opacity: 0.5; 
+                           filter: alpha(opacity=50); 
+                           position: absolute; 
+                           left: 0px; 
+                           top: 0px;
+                           display: none;
+                       }
+                   }
+                   .product-info-bigPic-bot{
+                       height:25px;
+                       a{
+                           height:25px;
+                           display: flex;
+                           align-items: center;
+                           justify-content: flex-end;
+                           color:#d71249;
+                           &:hover{
+                               span:last-child{
+                                   color:#2979ff;
+                                   text-decoration: underline;
+                               }
+                           }
+                       }
+                   }
+
+
+               }
+               .product-info-smallPic{
+                   width:383px;
+                   height: 85px;
+                   display:flex;
+                   justify-content: space-between;
+                   align-items: center;
+                   position: relative;
+                   padding: 15px 29px 0;
+                   b{
+                       display: block;
+                       width: 24px;
+                       height: 40px;
+                       font-size:40px;
+                       //font-weight: 900;
+                       position: absolute;
+                       top:20px;
+                       
+                       &:hover{
+                           color: #2979ff;
+                       }
+                   }
+                   b:first-of-type{
+                       left:-10px;
+                   }
+                    b:last-of-type{
+                        right:10px;
+                    }
+
+                   .product-info-smallPic-con{
+                       width: 325px;
+                       height:70px;
+                       ul{
+                           display: flex;
+                           justify-content: space-between;
+                       }
+                   }
+               }
+               .product-info-share{
+                    width:384px;
+                    height:36px;
+                    padding: 12px 0 0;
+                    display:flex;
+                    span{
+                        a:first-of-type{
+                            color:red;
+                        }
+                        a:nth-of-type(2){
+                            color:skyblue;
+                        }
+                        a:nth-of-type(3){
+                            color:skyblue;
+                        }
+                        a:last-of-type{
+                            color:green;
+                        }
+
+                        
+                    }
+                    .shoucang{
+                        margin-left:50px;
+                        color:orange;
+                        span{
+                            font-size:12px;
+                            color: #666;
+                        }
+                    }
+
+               }
+            }
+            .product-info-right{
+                width:795px;
+                height:378px;
+                h1{
+                    width: 795px;
+                    height:33px;
+                    padding: 0 0 8px;
+                    font-size: 1.4em;
+                    font-family: 微软雅黑;
+                    color: rgb(0, 0, 0);
+                    font-weight: 900;
+                }
+                h2{
+                    width: 795px;
+                    height:46px;
+                    font-size:12px;
+                    margin:10px 0;
+                    padding: 6px;
+                    border:1px dashed #666
+                }
+                ul{
+                    width: 795px;
+                    height:120px;
+                    li{
+                        height:22px;
+                        margin-top:2px;
+                    }
+                    li:nth-of-type(2){
+                        span:last-of-type{
+                            color:#d71249;
+                        }
+                    }
+                    li:nth-of-type(4){
+                        span:last-of-type{
+                            color:#d71249;
+                        }
+                    }
+                    li:last-of-type{
+                        width: 795px;
+                        a{
+                            float:right;
+                            font-size:12px;
+                            color:#2979ff;
+                            span{
+                                color:#999;
+                                &:hover{
+                                    color:#2979ff;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+                .product-info-bottom{
+                    width: 795px;
+                    height:154px;
+                    position: relative;
+                    background: #f4f5f7;
+                    border: 1px solid #ddd;
+                    margin-top: 5px;
+                    padding: 10px;
+                    p:first-of-type{
+                        height: 25px;
+                        margin-bottom: 10px;
+                    }
+                    p:nth-of-type(2){
+                        height:24px;
+                        margin-bottom: 10px;
+                        span:last-of-type{
+                            background: #fff;
+                            padding:0 5px;
+                        }
+                        
+                    }
+                    p:nth-of-type(3){
+                        height: 40px;
+                        padding: 0 0 0 48px;
+                        button{
+                            margin-left:5px;
+                            span:last-of-type{
+                                margin-left:5px;
+                            }
+                        }
+                        button:first-of-type{
+                            width: 121px;
+                            height:40px;
+                            background: #d71249;
+                            border-radius: 5px;
+                        }
+                        button:last-of-type{
+                            width: 121px;
+                            height:40px;
+                            background: #2979ff;
+                            border-radius: 5px;
+                        }
+
+                    }
+                    p:last-of-type{
+                        height: 18px;
+                        margin: 5px 0 0 45px;
+                        span{
+                            color:#d71249;
+                        }
+                        
+                    }
+                }
+            }
+        }
+        
+
+    }
+}

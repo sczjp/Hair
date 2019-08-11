@@ -1,0 +1,65 @@
+@import "reset";
+@import "mixin";
+//底部footer公用样式
+.copyright-mod{
+    height:167px;
+    font-family: Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\5b8b体,sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-bottom:15px;
+
+    .layout-grid{
+        width: 1190px;
+        .a-links{
+            font-size:12px;
+            display: flex;
+            justify-content: center;
+            //margin-top:4px;
+            a{
+                margin:0 12px;
+                color:#666;
+            }
+            span{
+                color:#c7c7c7;
+            }
+        }
+        .beian{
+            font-size:14px;
+            display: flex;
+            justify-content: center;
+            margin-top:17px;
+            span{
+                font-size:14px; 
+            }
+            a:last-of-type{
+                display: flex;
+                margin-left:13px;
+                img{
+                    margin-right:10px;
+                }
+
+            }
+
+        }
+        .copyright{
+            font-size:12px;
+            display: flex;
+            justify-content: center;
+            margin-top:13px;
+        }
+
+        .p-all-honor{
+            height:40px;
+            display: flex;
+            justify-content: center;
+            margin-top: 39px;
+            img{
+                height:100%;
+                margin: 0 8px;
+            }
+        }
+
+        
+    }
+
+}

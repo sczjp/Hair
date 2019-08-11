@@ -1,0 +1,105 @@
+@import "mixin";
+@import "reset";
+
+.Hair-register-top{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #f2f2f2;
+    .Hair-register-logo{
+        width: 1000px;
+        height:90px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        a{
+            margin:0 12px;
+        }
+    }
+}
+
+.Hair-register-center{
+    background: url("../images/shop_login_wrap_bg.png")no-repeat 50% 50%;
+    background-attachment: scroll;
+    height:590px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+   
+    .Hair-register-center-content{
+        width:1000px;
+        height:443px; 
+        padding: 35px 0 0 510px;
+        .entry{
+            background: #e8e8e8;
+            padding: 4px;
+            position: relative;
+            .Hair-register-center-con{
+                width:490px;
+                height: 400px;
+                border:1px solid #f2f2f2;
+                background:#fff;
+                .Hair-register-center-con-title{
+                    width: 488px;
+                    height: 63px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0 16px;
+                    border-bottom:1px solid #f2f2f2;
+                    h2{
+                        font-weight: 900;
+                    }
+                    a{
+                        color:#005aaa;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+                .Hair-register-form{
+                    width:488px;
+                    height:290px;
+                    padding: 50px 115px 20px;
+                    div{
+                        margin-top:20px;
+                        input{
+                            width: 260px;
+                            height: 35px;
+                        }
+                    }
+                    div:first-of-type{
+                        margin-top:10px;
+                    }
+                    .Hair-register-submit{
+                            height:56px;
+                            padding: 8px 0;
+                            a{
+                                display: block;
+                                background: #32beff;
+                                border-radius: 4px;
+                                &:hover{
+                                    background: #005aaa;
+                                }
+                                b{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 260px;
+                                    height: 40px;
+                                    font-size: 15px;
+                                    color:#fff;
+                                    
+                                }
+                            }
+                            
+                        
+                    }
+                }
+                         
+
+            }
+        }
+    }
+}
+

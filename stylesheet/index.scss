@@ -1,0 +1,443 @@
+@import "mixin";
+@import "reset";
+body{
+    background: #f6f6f6;
+}
+.Hair-index-footer{
+    margin-top:-4px;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+.Hair-index-banner-box{
+    height: 430px;
+    margin-bottom:30px;
+    margin-top:-4px;
+    
+    .Hair-index-banner{
+        width: 1190px;
+        height: 426px;
+        background: gold;
+        margin: 0 auto;
+        .Hair-index-nav-left-con{
+
+            position: relative;
+            ul{
+                width: 192px;
+                height:426px; 
+                padding: 15px 0;
+                position: absolute;                             
+                //background: #2979ff;
+                background: rgba(0,0,0,0.6);
+                z-index: 200;
+                li{
+                    width: 192px;
+                    height:36px;
+                    padding: 0 0 0 12px;
+
+                    a{
+                                            
+                        display: flex;
+                        justify-content: space-between;
+                        width: 180px;
+                        height:36px;
+                        
+                        font-size:14px;
+                        color:#fff;
+                        span:last-of-type{
+                            color:#666;
+                        }
+                    }
+                }
+            }
+            .goodsList{
+                width:447px;
+                height:430px;
+                position: absolute;
+                background: #fff;
+                left:0px;
+                display: none;
+
+                .goodsListLeft{
+                    width:207px;
+                    float: left;
+                    ol{
+                        height:430px;
+                        padding: 5px;
+                        li{
+                            a{
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                width: 207px;
+                                height: 50px;
+                                img{
+                                    width: 34px;
+                                    height:34px;
+                                    margin:5px 28px 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                .goodsListRight{
+                    width: 217px;
+                    height: 430px;
+                    float: right;
+                    dl{
+                        width:217px;
+                        height:104px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        position: relative;
+                        border:2px solid #999;
+                        dt{
+                            margin: 0 28px 0 17px;
+                            img{
+                                width: 70px;
+                                height: 70px;
+                            }
+                        }
+                        dd{
+                           display: flex;
+                           flex-direction: column;
+                           font-size:12px;
+                           span:first-of-type{
+                                width: 90px;
+                                height:36px;
+                                margin:8px 0 6px;
+                                word-wrap: break-word;
+                                word-break: normal;
+                            }
+                        }
+                        .iconfont{
+                            position: absolute;
+                            width: 60px;
+                            height: 20px;
+                            background: #d71247;
+                            top:0px;
+                            left:95px;
+                            font-size:12px;
+                            text-align: center;
+                            line-height: 20px;
+                        }
+                    }
+                }
+
+
+            }
+
+           
+           
+        }
+    }
+    
+}
+.Hair-index-saleHot-box{
+    height: 150px;
+    margin-bottom:30px;
+    .Hair-index-saleHot{
+        height: 150px;
+        margin: 0 auto;
+        width: 1190px;
+        
+        background: green;
+        
+        ul{
+            display: flex;
+            justify-content: space-between;
+            li{
+                width: 290px;
+                height: 150px;
+                background: pink;
+            }
+           
+        }
+    }
+}
+.Hair-index-jptj-mod{
+    height:480px;
+    margin-bottom: 30px;
+    .Hair-index-jptj{
+        margin:0 auto;
+        width: 1190px;
+        height: 480px;
+        background:#2979ff;
+        .Hair-index-jptj-top{
+            height: 60px;
+            width: 1190px;
+            border-radius: 10px 10px 0 0;
+            background:orangered;
+        }
+        .Hair-index-jptj-bot{
+            height:420px;
+            padding: 10px;
+            background: gold;
+            display: flex;
+            justify-content: space-between;
+            .Hair-index-jptj-bot-left{
+                height: 400px;
+                width: 220px;
+                background: pink;
+            }
+            .Hair-index-jptj-bot-right{
+                width:930px;
+                background: red;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                li{
+                    width: 310px;
+                    height: 200px;
+                    padding: 20px;
+                    background: skyblue;
+                    border-right:1px solid #eaeaea;
+                    border-bottom:1px solid #eaeaea;
+                    background: orange;
+                }
+                li:nth-of-type(3){
+                    border-right:none;
+                }
+                li:nth-of-type(4){
+                    border-bottom:none;
+                } li:nth-of-type(5){
+                    border-bottom:none;
+                }
+                li:last-of-type{
+                    border-right:none;
+                    border-bottom:none;
+                }
+                
+            }
+        }
+    }
+}
+
+.Hair-index-channals-mod{
+    height:572px;
+    margin-bottom: 30px;
+    .Hair-index-channals{
+        width: 1190px;
+        height: 572px;
+        margin:0 auto;
+        display: flex;
+        justify-content: space-between;
+        background: blue;
+
+        .Hair-index-channals-left{
+            width: 390px;
+            height: 572px;;
+            .Hair-index-channals-left-top{
+                width: 390px;
+                padding:0 18px;
+                height:60px;
+                background: red;
+                border-radius: 10px 10px 0 0;    
+            }
+            .Hair-index-channals-left-bot{
+                width: 390px;
+                height:512px;
+                padding: 0 10px 10px;
+                background: pink;
+            }
+        }
+        .Hair-index-channals-center{
+            width: 390px;
+            height: 572px;;
+            .Hair-index-channals-center-top{
+                width: 390px;
+                padding:0 18px;
+                height:60px;
+                background: red;
+                border-radius: 10px 10px 0 0;
+               
+                
+            }
+            .Hair-index-channals-center-bot{
+                width: 390px;
+                height:512px;
+                padding: 0 10px 10px;
+                background: pink;
+            }
+        }
+        .Hair-index-channals-right{
+            width: 390px;
+            height: 572px;;
+            .Hair-index-channals-right-top{
+                width: 390px;
+                padding:0 18px;
+                height:60px;
+                background: #c8af64;
+                border-radius: 10px 10px 0 0;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                font-weight: 900;
+                color: #fff;
+                
+                
+            }
+            .Hair-index-channals-right-bot{
+                width: 390px;
+                height:512px;
+                padding: 10px 10px 10px;
+                background: #fff;
+                display: flex;
+                flex-wrap:wrap;
+                justify-content: space-between;
+                div{
+                    width: 50%;
+                    height:246px;
+                    padding:18px 0;
+                    border-right:1px solid #eaeaea;
+                    border-bottom:1px solid #eaeaea;
+                    
+                }
+                div:nth-of-type(2){
+                    border-right:none;
+                }
+                div:nth-of-type(3){
+                    border-bottom:none;
+                }
+                div:nth-of-type(4){
+                    border-right:none;
+                    border-bottom:none;
+                }
+                a{
+                    &:hover{
+                        color:#2979ff;
+                    }
+                    p:nth-of-type(2){
+                        color:#666;
+                        margin:5px 15px 0;
+                    }
+                    p:nth-of-type(3){
+                        width: 160px;
+                        height:120px;
+
+                        margin-top: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.Hair-index-layout-box{
+    height:398px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    .Hair-index-layout{
+        height:398px;
+        width: 1190px;
+        background: red;
+        .Hair-index-layout-top{
+            height:46px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            .Hair-index-layout-topTitle{
+                width: 146px;
+                padding: 0 18px;
+                height:56px;
+                position: absolute;
+                background: #2979ff;
+                top:-10px;
+                border-radius: 10px 10px 0 0;
+            }
+            .Hair-index-layout-topCon{
+                display: flex;
+                margin-left:156px;
+                width: 1034px;
+                height: 46px;
+                border-bottom:2px solid #eaeaea;
+                li{
+                    width: 128px;
+                    height:46px;
+                    text-align: center;
+                    line-height: 46px;
+                    &:hover{
+                        border-bottom: 2px solid #2979ff;
+                    }
+                }
+                span{
+                    display: block;
+                    height: 46px;
+                    line-height: 46px;
+                }
+            }
+        }
+        .Hair-index-layout-bot{
+            width:1190px;
+            height:352px;
+            background: gold;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            .Hair-index-layout-botLeft{
+                width: 220px;
+                height: 332px;
+                background: blue;
+            }
+            .Hair-index-layout-botRight{
+                height: 332px;
+                width:940px;
+                background: purple;
+            }
+        }
+    }
+}
+//大家都说
+.Hair-index-saying-mod{
+    height: 444px;
+    margin-bottom: 20px;
+    //background: red;
+    .Hair-index-saying{
+        height: 444px;
+        width:1190px;
+        margin:0 auto;
+        background: red;
+        .Hair-index-saying-top{
+            width: 1190px;
+            height:60px;
+            padding: 0 18px;
+            border-radius: 10px 10px 0 0;
+            background: blue;
+        }
+        .Hair-index-saying-bot{
+            height: 384px;
+            width:1190px;
+            padding-top:10px;
+            background: gold;
+        }
+    }
+}
+//为您推荐
+.Hair-index-recommend-mod{
+    height: 381px;
+    margin-bottom: 20px;
+    //background: red;
+    .Hair-index-recommend{
+        height: 381px;
+        width:1190px;
+        margin:0 auto;
+        background: red;
+        .Hair-index-recommend-top{
+            width: 1190px;
+            height:60px;
+            padding: 0 18px;
+            border-radius: 10px 10px 0 0;
+            background: blue;
+        }
+        .Hair-index-recommend-bot{
+            height: 321px;
+            width:1190px;
+            padding:10px 0;
+            background: gold;
+        }
+    }
+}
+
+
